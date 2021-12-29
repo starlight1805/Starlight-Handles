@@ -1,0 +1,184 @@
+
+
+.jobcard-body{
+    display: flex;
+}
+.jobcard{
+    width:96%;
+    background-color: #FFFFFF;
+    /*#DDEEFC*/
+    height: 220px;
+    padding: 30px;
+    margin-left: 25px;
+    border-radius: 15px;
+    font-family: 'Sora', sans-serif;
+    margin-bottom: 20px;
+}
+.jobcontainer{
+  margin-left: 150px;
+  background-color: #000;
+}
+.jobimg{
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  margin-right: 120px;
+  margin-left: 80px;
+  
+}
+
+.job-content{
+    background-color: #DDEEFC;
+}
+.jobcard:hover{
+    
+    box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+}
+.getjobbtn{
+    background-color: #FA990C;
+    margin-left: 2%;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    width: 30%;
+    
+}
+.searchbar{
+  background-color: #FA990C;
+  width: 30%;
+   height: 54px;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Cantarell', sans-serif;
+   margin-top: 0%;
+}
+.btnsearch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getjobbtn:hover{
+    background-color: #FFBD8E;
+}
+.postedtime{
+    margin-left: 210px;
+    font-size: 13px;
+    font-family: 'Cantarell';
+}
+.card-title{
+  font-size: 20px;
+  font-family: Cantarell;
+  font-weight: 700;
+}
+.jobcard-text{
+  font-size: 20px;
+  font-family: Cantarell;
+}
+
+.section {
+    min-width: 200px;
+    width: 33.33%;
+    height: 200px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s linear;
+    
+    
+
+    @media (max-width: 768px ) {
+       width: 50%;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+  }
+  .section:hover {
+    background: rgba(#000,0.3) ;
+}
+
+.loader {
+    width : 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    animation: rotation 1s linear infinite;
+    
+    
+  }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.5) translate(0 , 0);
+    background-color: white;
+    border-radius: 50%;
+    animation: animloader38 1s infinite ease-in-out;
+  }
+  .loader:before {
+    background-color: #FF3D00;
+    transform: scale(0.5) translate( -48px , -48px);
+  }
+
+  @keyframes animloader38 {
+    50% { transform: scale(1) translate(-50% , -50%)}
+  }
+  @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+  @media(max-width:768px) {
+    .jobcontainer{
+      margin-left: 0px;
+      padding: 0px;
+      width: 100%;
+      border-radius: 0px;
+    }
+    .jobimg{
+      width: 50px;
+      height: 50px;
+      margin-left: 1px;
+      margin-right: 10px;
+      margin-top: 15px;
+    }
+    .jobcard{
+      margin-left: 0px;
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      margin-bottom:2px ;
+      margin-top: 2px;
+    }
+    .jobcard .btn{
+      width: 100px;
+      font-size: 13px;
+    }
+    .card-title{
+      font-size: 13px;
+      
+    }
+    .jobcard-text{
+      font-size: 13px;
+    }
+    .postedtime{
+      margin-left: 10px;
+      font-size: 11px;
+    }
+    .searchbar{
+      margin-top: 0px;
+      
+    }
+    
+    
+  }

@@ -1,0 +1,71 @@
+.scroll-to-top{
+    position: fixed;
+    bottom: 82px;
+    left: 95%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: tomato;
+    color: white;
+    z-index: 100;
+}
+.scroll-to-top:hover{
+    background-color: crimson;
+}
+.scroll-to-top .icon{
+    margin-top: 10px;
+    animation: scrollTop 0.5s alternate ease;
+}
+.msgfloating{
+    position: fixed;
+    bottom: 22px;
+    left: 95%;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: tomato;
+    color: white;
+    
+    z-index: 100;
+}
+.msgfloating:hover{
+    background-color: crimson;
+}
+.msgfloating .icon{
+    color: white;
+    margin-top: -12px;
+    animation: scrollTop 0.5s alternate ease;
+}
+.supportfloating{
+    position: fixed;
+    bottom: 10%;
+    left: 75%;
+    z-index: 1000;
+}
+@keyframes scrollTop{
+    from{
+        transform: translateY(2px);
+    }
+    to{
+        transform: translateY(-1px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .scroll-to-top{
+        left: 75%;
+        width: 30px;
+        height: 30px;
+    }
+    .scroll-to-top .icon{
+        margin-top: 5px;
+    }
+    .msgfloating{
+        left: 75%;
+        width: 32px;
+        height: 34px;
+    }
+    .msgfloating .icon{
+        margin-top: -20px;
+    }
+    
+}

@@ -1,0 +1,45 @@
+.homebanner{
+    position:fixed;
+    z-index: 5000;
+    bottom: 0%;
+    left: 15%;
+    width: 70%;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    background-color: lightyellow;
+    /*lightyellow*/
+    
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: Cantarell;
+    top:-10%;
+}
+.bannerclose{
+    margin-left: 30px;
+    padding:10px;
+    padding-top: 2px;
+}
+.bannershare{
+    text-decoration: none;
+    background-color:#26B9F1 ;
+    /*#26B9F1
+    #ddeefc*/
+    padding:5px;
+    border-radius: 5px;
+    color: black;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.bannertext{
+    margin-left: 20px;
+}
+@media screen and (max-width: 600px){
+    .homebanner{
+        visibility: hidden;
+    }
+}

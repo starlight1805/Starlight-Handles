@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+.navbar{
+    
+    /*background: linear-gradient(to right, #bbd2c5, #536976, #292e49);*/
+    background-color: #060b26;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+    justify-content: start;
+    width: 100%; 
+    overflow: hidden; 
+    
+}
+
+.navbar .welcome{
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 47%;
+    text-align: center;
+    float: none;
+  position: absolute;
+  top: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+.navbar .welcome:hover{
+    color: #1393CD;
+}
+.navbar .contactbtn{
+    margin-left: 82%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;    
+    width: 150px;
+    padding: 8px 0;
+    text-align: center;
+    float: right;
+    background-color: #060b26;
+    font-family: 'Sora', sans-serif;
+}
+.navbar .contactbtn:hover{
+    font-size: 20px;
+}
+.navbar .logoutbtn{
+    margin-left: 90%;
+    
+    position: absolute;
+    width: 130px;
+    padding: 8px 0;
+    float: right;
+    background-color: #060b26;
+    font-family: 'Sora', sans-serif;
+}
+.navbar .logoutbtn:hover{
+    font-size: 20px;
+}
+.navbar .logoutbtn .logouttext{
+    
+    font-family: 'Sora', sans-serif;
+}
+@media screen and (max-width: 600px) {
+    .navbar{
+        border-radius: 0%;
+        margin: 0px;
+        width: 100%;
+    }
+    .navbar button{
+      float: none;
+      display: block;
+      
+    }
+    .navbar .welcome {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        /*font-family: 'Klee One', cursive;*/
+        
+        transform: none;
+        font-size: 20px;
+      }
+    
+    .navbar .contactbtn{
+        visibility:hidden;
+    }
+    .navbar .logoutbtn{
+        font-size: 13px;
+        margin-left: 80%;
+        width: 70px;
+        padding: 0px;
+        color:greenyellow;
+    }
+    .navbar .logoutbtn .logouttext{
+        font-size: 0px;
+        visibility: hidden;
+        
+    }
+}
+
+.menu-bars {
+    margin-left: 1.3rem;
+    font-size: 1.7rem;
+    background: none;
+    
+}
+.menu-bars:hover{
+    transform: rotate(0deg);
+    animation: rotate 0.2s linear;
+}
+.nav-menu{
+    background-color: #060b26;
+   
+    width: 210px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 1;
+    font-family: 'Sora', sans-serif;
+}
+
+.nav-menu.active{
+    left: -2.2%;
+    transition: 350ms;
+}
+.nav-menuperm{
+    background-color: #060b26;
+    /*#1393CD*/
+    /*#060b26*/
+    width: 105px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 1;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.nav-menuperm.active{
+    padding-top: 15px;
+    
+    left: -2%;
+    transition: 350ms;
+}
+@media screen and (max-width: 600px){
+    .nav-menuperm.active{
+        width: 0px;
+        visibility: hidden;
+    }
+}
+
+.nav-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+    list-style: none;
+    height: 60px;
+}
+.nav-text a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    font-family: 'Sora', sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-radius: 4px;
+}
+.nav-text a:hover{
+    background-color: #1a83ff;
+}
+.nav-menu-items{
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+}
+.navbar-toggle{
+    background-color: #060b26;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navbar h2 {
+    position: absolute;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 700px;
+    color: #fff;
+  }
+  
+span{
+    margin-left: 16px;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+
+}
+
+.sidelink {
+	color: #FFF; 
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 8px;
+	position: relative;
+}
+	
+.sidelink:hover, :focus {
+    /*background-color: #30305a;*/
+    outline: 0;
+}
+.sidelink:hover > .sidespan{
+    transform: scale(1);
+    opacity: 1;
+}
+.sidespan {
+		position: absolute;
+		background-color: #30305a;
+		white-space: nowrap;
+		padding: .5rem 1rem;
+		border-radius: 6px;
+		left: calc(70% + 1.5rem);
+		transform-origin: center left;
+		transform: scale(0);
+		opacity: 0;
+		transition: .15s ease;
+        
+		
+}
+.sidespan::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: #30305a;
+    left: -5px;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg);
+    border-radius: 3px;
+    
+}

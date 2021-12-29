@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+.profile-container{
+    padding: 20px;
+    
+  margin-top: 1.5%;
+  margin-left: 30%;
+  width: 100%;
+  max-width: 620px;
+  min-height: 550px;
+  justify-content: center;
+  font-family: 'Pacifico', cursive; 
+    background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+.profile{
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+}
+.tab-pane p{
+  color: chartreuse;
+}
+.profilename{
+    font-family: 'Pacifico', cursive;
+}
+.skillstext{
+    color: teal;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2.5px;
+}
+.profilelinks{
+    color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .profile-container{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .profile-work{
+    visibility: hidden;
+    height: 0px;
+  }
+  .profile-img{
+    margin-top: 15px;
+    margin-left: 30%;
+  }
+  .profilename{
+    margin-left: 20%;
+  }
+  .skillstext{
+    margin-left: 18%;
+  }
+}
+

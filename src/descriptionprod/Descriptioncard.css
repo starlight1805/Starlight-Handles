@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Sigmar One';
+}*/
+
+
+.desc-card-container{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.desc-card{
+    position: relative;
+    width: 60%;
+    height: 580px;
+    /*background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.desc-card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+}
+.desc-card-2{
+    position: relative;
+    width: 35%;
+    height: 580px;
+    /*background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    
+}
+.desc-card-2:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+}
+.desc-card-3{
+    position: relative;
+    width: 60%;
+    height: 800px;
+    /*background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    
+}
+.desc-card-3:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+}
+.desc-card-title-2{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    /*background: #000;
+    clip-path: circle(150px at center 0);*/
+    clip-path:polygon(0 0, 100% 0, 100% 13%, 0 13%);
+    text-align: center;
+    background: linear-gradient(45deg,#ffaf00,#bb02ff);
+    
+}
+.desc-card-title{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    clip-path:polygon(0 0, 100% 0, 100% 13%, 0 21%);
+    text-align: center;
+    background: linear-gradient(45deg,#ffaf00,#bb02ff);
+    background-attachment: fixed;
+}
+.desc-card-title-3{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    clip-path:polygon(0 0, 100% 0, 100% 13%, 0 21%);
+    text-align: center;
+    background: linear-gradient(45deg,#ffaf00,#bb02ff);
+    background-attachment: fixed;
+}
+.desc-card-title h2{
+    font-family: 'Sora', sans-serif;
+}
+
+.desc-card-content{
+    
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    top: 17%;
+    transition: 0.5s;
+    
+}
+
+.desc-card-content h5{
+    font-size: 25px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.star{
+    cursor: pointer;
+    transition: color 200ms;
+}
+.starsdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.desc-card-button{
+    bottom: 50%;
+    width: 22%;
+    margin-left: 39%;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #E040FB, #00BCD4);
+    transition: all 0.4s ease;    
+    
+}
+
+.desc-card-button:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s; 
+}
+
+.desc-dialog{
+   width: 26%;
+   margin-left: 37%;
+
+}
+.dialog-button{
+    
+    bottom: 50%;
+    width: 50%;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #E040FB, #00BCD4);
+    transition: all 0.4s ease;   
+}
+.carousel.carousel-slider {
+    margin: 0px auto;
+    margin-left: 20%;
+    overflow: visible;
+  }
+  
+  .carousel .slide {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .carousel .slide-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel .slide img {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 35%;
+    height: 400px;
+    object-fit: contain;
+  }
+  .carousel .slide iframe {
+    margin: 30px;
+    width: 35%;
+  }
+  .carousel .text-container {
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .carousel .text-container h2 {
+    margin-top: 30%;
+    font-size: 25px;
+    font-family: 'Sora', sans-serif;
+  }
+  
+  .carousel .text-container p:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .carousel .control-dots {
+    bottom: -40px;
+  }
+  
+  .carousel .thumbs-wrapper {
+    margin-top: 30px;
+    margin-left: 35%;
+  }
+  .carousel{
+      align-items: center;
+  }
+  
+
+
+@media screen and (max-width: 600px) {
+    .desc-card-button{
+        bottom: 10%;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 35px;
+        background-image: linear-gradient(to right, #E040FB, #00BCD4);
+        transition: all 0.4s ease;    
+        
+    }
+    .desc-card{
+        border-radius: 5px;
+        position: relative;
+        width: 90%;
+        height: 800px;
+    }
+    .desc-card-2{
+        border-radius: 5px;
+        position: relative;
+        width: 90%;
+        height: 500px;
+    }
+    .desc-card-3{
+        border-radius: 5px;
+        position: relative;
+        width: 90%;
+        height: 700px;
+    }
+    .carousel.carousel-slider {
+        margin: 0px;
+        margin-left: 0px;
+        overflow: hidden;
+      }
+    
+    .carousel .slide img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 25%;
+        margin-left: 0px;
+        height: 300px;
+        object-fit: contain;
+      }
+      .carousel .thumbs-wrapper {
+        margin-left: -13%;
+      }
+      .carousel .slide-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        height: 100%;
+      }
+      .carousel .slide {
+          background-color: unset;
+       }
+       
+      .carousel .text-container{
+        width: 0px;
+          visibility: hidden;
+          
+      }
+}
+
